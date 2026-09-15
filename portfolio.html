@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-surface-variant": "#54433e",
+          "surface-dim": "#e7d7d0",
+          "secondary-container": "#ffd0b9",
+          "primary-container": "#af5e45",
+          "surface-bright": "#fff8f6",
+          "on-secondary-container": "#7a5745",
+          "on-error": "#ffffff",
+          "outline-variant": "#dac1ba",
+          "on-primary-fixed": "#3a0a00",
+          "secondary-fixed": "#ffdbca",
+          "on-primary-container": "#fffbff",
+          "outline": "#87736d",
+          "surface-container-lowest": "#ffffff",
+          "primary": "#91462f",
+          "surface-container-low": "#fff1eb",
+          "on-tertiary-fixed": "#2c1600",
+          "tertiary": "#7b542b",
+          "surface": "#fff8f6",
+          "background": "#fff8f6",
+          "on-secondary-fixed": "#2d1507",
+          "on-primary-fixed-variant": "#76321d",
+          "inverse-surface": "#382e2a",
+          "tertiary-container": "#966c41",
+          "inverse-primary": "#ffb59f",
+          "secondary": "#795644",
+          "on-tertiary-container": "#fffbff",
+          "inverse-on-surface": "#feede6",
+          "surface-tint": "#944931",
+          "on-surface": "#221a16",
+          "tertiary-fixed": "#ffdcbd",
+          "surface-variant": "#efdfd8",
+          "secondary-fixed-dim": "#eabda6",
+          "on-secondary-fixed-variant": "#5f3f2e",
+          "primary-fixed": "#ffdbd0",
+          "surface-container-highest": "#efdfd8",
+          "on-tertiary-fixed-variant": "#623f18",
+          "on-error-container": "#93000a",
+          "error": "#ba1a1a",
+          "on-tertiary": "#ffffff",
+          "on-secondary": "#ffffff",
+          "surface-container-high": "#f5e5de",
+          "error-container": "#ffdad6",
+          "primary-fixed-dim": "#ffb59f",
+          "on-background": "#221a16",
+          "on-primary": "#ffffff",
+          "surface-container": "#fbebe4",
+          "tertiary-fixed-dim": "#f0bd8b"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-lg": "1.75rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem",
+          "gutter": "2rem",
+          "space-md": "1rem",
+          "gutter-mobile": "1rem",
+          "margin": "4rem",
+          "margin-mobile": "1.5rem",
+          "space-xl": "3rem"
+        },
+        "fontFamily": {
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "headline-display": [
+            "Playfair Display"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-display-mobile": [
+            "Playfair Display"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-sm": [
+            "1.5rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "0em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-display": [
+            "4.5rem",
+            {
+              "lineHeight": "5rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "0.875rem",
+            {
+              "lineHeight": "1.375rem",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "2rem",
+            {
+              "lineHeight": "2.5rem",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-display-mobile": [
+            "2.75rem",
+            {
+              "lineHeight": "3.25rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "2rem",
+            {
+              "lineHeight": "2.5rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-lg": [
+            "0.875rem",
+            {
+              "lineHeight": "1.125rem",
+              "letterSpacing": "0.08em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "3rem",
+            {
+              "lineHeight": "3.5rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "0.6875rem",
+            {
+              "lineHeight": "0.875rem",
+              "letterSpacing": "0.14em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "1rem",
+            {
+              "lineHeight": "1.625rem",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "1.125rem",
+            {
+              "lineHeight": "1.875rem",
+              "letterSpacing": "0.01em",
+              "fontWeight": "300"
+            }
+          ],
+          "label-md": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "letterSpacing": "0.12em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(35,27,23,0.05)]"><div class="h-20 w-full px-margin-mobile md:px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="transparent home decor logo.png" class="h-16 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W4OBQX7BQriAIfp7w6NLoyza9_5P8eyYXvNqLsXXgL80yedDd_pnwDeDYI_xAd6jnZ6KVBkrDJR6mDyypEww4r86yMF5c269fhkysvAjCo1GASRz2aVBf_T7RwZr43o41kjyj8VrJsXcZ1dxOKMKgSBzmsgcmD64EWwR0k1dHhCLh-hPP1WzF5UQHzt6sCXAtPKPwqUB3OVo2KPgkZ_DbX3BD3tZAmnIrCDJdQAVXzVfFsQKMCt-k3RfIYYb6y7-2QDvZeKE8d"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface hidden sm:inline-block">Home Decor</span></div><nav class="hidden lg:flex items-center gap-space-xl" data-active-classes="text-primary font-semibold"><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="index.html">Home</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="about.html">About Us</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="services" href="services.html">Services</a><a aria-current="page" class="uppercase tracking-wider transition-colors text-primary font-semibold" data-path="portfolio" href="portfolio.html">Portfolio</a></nav><div class="flex items-center gap-space-lg"><a class="hidden sm:inline-flex items-center justify-center bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider px-space-lg py-space-sm rounded-lg hover:bg-primary-container hover:text-on-primary-container transition-all shadow-[0_4px_12px_rgba(145,70,47,0.18)] duration-300 transform hover:scale-105 active:scale-95 hover:-translate-y-1 " data-path="book-a-consultation" href="#">Book a Consultation</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Editorial Archival Header -->
+<section class="relative w-full px-margin-mobile md:px-margin pt-space-xl pb-space-lg overflow-hidden">
+<div class="absolute -top-24 right-1/4 w-96 h-96 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="flex flex-col max-w-2xl">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="w-8 h-[1px] bg-primary"></span>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary">Archival Index 2021—2025</span>
+</div>
+<h1 class="font-headline-display text-headline-display tracking-tight text-on-surface">Selected Works</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-sm max-w-xl">
+          An archive of private residences, penthouses, and sanctuary villas honoring monolithic stone, unlacquered metals, and tactile serenity.
+        </p>
+</div>
+<!-- Studio Monograph Metrics badge -->
+<div class="flex items-center gap-space-md bg-surface-container-low px-space-lg py-space-md rounded-xl shadow-sm self-start md:self-auto">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">24</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Global Estates</span>
+</div>
+<div class="w-px h-8 bg-outline-variant/40"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">6</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Monograph Editions</span>
+</div>
+</div>
+</div>
+<!-- Category Filter Bar (Functional JS Filtering) -->
+<div class="max-w-7xl mx-auto mt-space-xl">
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs scrollbar-none" id="filterContainer">
+<button class="filter-btn active px-space-md py-space-xs rounded-full font-label-md text-label-md uppercase tracking-wider transition-all duration-300 bg-inverse-surface text-inverse-on-surface shadow-sm" data-filter="all">
+          All Works (06)
+        </button>
+<button class="filter-btn px-space-md py-space-xs rounded-full font-label-md text-label-md uppercase tracking-wider transition-all duration-300 bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface" data-filter="private-residences">
+          Private Residences
+        </button>
+<button class="filter-btn px-space-md py-space-xs rounded-full font-label-md text-label-md uppercase tracking-wider transition-all duration-300 bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface" data-filter="penthouses">
+          Penthouses
+        </button>
+<button class="filter-btn px-space-md py-space-xs rounded-full font-label-md text-label-md uppercase tracking-wider transition-all duration-300 bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface" data-filter="coastal-retreats">
+          Coastal Retreats
+        </button>
+<button class="filter-btn px-space-md py-space-xs rounded-full font-label-md text-label-md uppercase tracking-wider transition-all duration-300 bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface" data-filter="bespoke-commercial">
+          Bespoke Commercial
+        </button>
+</div>
+</div>
+</section>
+<!-- Curated Asymmetric Editorial Project Grid -->
+<section class="w-full px-margin-mobile md:px-margin py-space-md">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl" id="projectsContainer">
+<!-- PROJECT 01: VILLA SERAPHINA (Lead Hero Monograph) -->
+<article class="project-item group relative bg-surface-container-low rounded-xl overflow-hidden shadow-sm transition-all duration-500 hover:shadow-xl" data-category="coastal-retreats private-residences">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+<div class="lg:col-span-8 relative overflow-hidden min-h-[440px] lg:min-h-[580px]">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]" data-alt="Editorial photograph of an expansive lakeside Italian villa salon opening to Lake Como. Featuring pale travertine stone arches, raw linen upholstery in warm ivory, unlacquered bronze coffee table with art monographs, and soft diffused northern Italian sunlight falling across natural herringbone oak floors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_DbETJ-m5Xd3GLoj8AckODlRW_HKJZFJ7gzn3Nh1t8dXpiB2m1DleN5971MPNyusc0ugRF685AlUhc6LHO_jgQeGVMea7AjL4CeMJxSC1d5RweFcG63YSUKlHjyT_69fxq2O3DIjJ21FT2MtiysORJ44gazNahMLYV9fxKx-ev0zMy4om5kUWtO2S6SlOOEm3mISYYMLI6RHcLePejBfWc2B1TopzhFuEX--4SKxk5Lvgxz6EqbCZ"/>
+<div class="absolute top-space-md left-space-md bg-surface/90 backdrop-blur-md px-space-md py-space-xs rounded-full flex items-center gap-space-xs shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface">Featured Monograph</span>
+</div>
+<!-- Before / After Interactive Trigger -->
+<button class="absolute bottom-space-md left-space-md bg-surface/90 backdrop-blur-md hover:bg-surface text-on-surface px-space-md py-space-xs rounded-full font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-space-xs shadow-md transition-all hover:scale-105" onclick="toggleModal('modal-seraphina')">
+<span class="material-symbols-outlined text-[16px] text-primary">compare</span>
+              View Archive Before &amp; After
+            </button>
+</div>
+<div class="lg:col-span-4 p-space-lg lg:p-space-xl flex flex-col justify-between bg-surface-container-lowest">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm tracking-widest uppercase mb-space-xs">
+<span>01 / Lake Como, Italy</span>
+<span>2024</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight group-hover:text-primary transition-colors">
+                Villa Seraphina
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+                Restoration of a late-19th-century waterfront palazzetto. Preserved frescoed vaults contrasted against monolithic Roman travertine, brushed bronze, and bespoke raw wool tapestries.
+              </p>
+<!-- Curated Material Specimen Palette -->
+<div class="mt-space-lg pt-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary block mb-space-xs">Featured Materiality</span>
+<div class="flex flex-wrap gap-space-xs">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-lg">
+<span class="w-3 h-3 rounded-full bg-[#e3d7cb] shadow-inner"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Roman Travertine</span>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-lg">
+<span class="w-3 h-3 rounded-full bg-[#5f493b] shadow-inner"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Smoked Walnut</span>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-lg">
+<span class="w-3 h-3 rounded-full bg-[#87736d] shadow-inner"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Aged Bronze</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-lg flex flex-col gap-space-sm">
+<div class="grid grid-cols-2 gap-space-md py-space-sm bg-surface-container-low px-space-md rounded-lg">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Scale</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">8,400 <span class="text-sm font-sans font-normal text-on-surface-variant">sq ft</span></span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Duration</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">22 <span class="text-sm font-sans font-normal text-on-surface-variant">mos</span></span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-outline">Photography by François Halard</span>
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg uppercase tracking-wider text-primary hover:text-primary-container transition-colors group/link" href="#">
+<span>Full Monograph</span>
+<span class="material-symbols-outlined text-[16px] transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- TWO-COLUMN ASYMMETRIC SPREAD: TRIBECA & CASA DE TIERRA -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- PROJECT 02: THE TRIBECA LOFT -->
+<article class="project-item lg:col-span-7 flex flex-col group bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300" data-category="penthouses private-residences">
+<div class="relative w-full aspect-[16/11] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]" data-alt="Modern Tribeca penthouse loft interior with warm minimalist styling. Double-height industrial crittall steel windows letting in soft overcast daylight, seamless polished Belgian limestone fireplace bench, floor-to-ceiling smoked walnut bookshelves, low slung linen daybed and museum quality earthenware vessel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBbFr4FZiEPAjdlyDB8OOO8BnNKMS7_8sxy4iOOYP4bv7DRpDL1RbQQ7KFoT5GpIQg4ASo5Xb9QDAIibcc5-Nve4_vdy-zAIoaktxQj88bb9abwwO2ETvBYLvsNigLmx7P0Gk9xH_yOUCSOHqzyFa3BKIHwx9MRoV81LdXy9ktqLpFxIWWhsW6A4Ld8pyGd3Pm8PluFfMqKWBC9Yqi9qJNwqML8gOooTmYcJXqKWWckxEO5wFkXlMX"/>
+<span class="absolute top-space-md left-space-md bg-surface/90 backdrop-blur-md px-space-md py-space-xs rounded-full font-label-sm text-label-sm uppercase tracking-widest text-on-surface">
+              Penthouse Study
+            </span>
+<button class="absolute bottom-space-md right-space-md bg-surface/90 backdrop-blur-md hover:bg-surface text-on-surface p-space-xs rounded-full font-label-sm text-label-sm flex items-center justify-center shadow-md transition-all" onclick="toggleModal('modal-tribeca')">
+<span class="material-symbols-outlined text-[18px] text-primary">visibility</span>
+</button>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-1 bg-surface-container-lowest">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm tracking-widest uppercase mb-space-xs">
+<span>02 / New York, NY</span>
+<span>4,800 sq ft</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight group-hover:text-primary transition-colors">
+                The Tribeca Loft
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                Quietude carved out of Lower Manhattan. A former industrial grain store converted into a sequence of acoustic sanctuaries using Belgian bluestone and hand-finished lime plaster.
+              </p>
+<!-- Materials spec -->
+<div class="mt-space-md flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-1 bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface">Pierre de Bourgogne</span>
+<span class="px-space-sm py-1 bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface">Solid Black Walnut</span>
+<span class="px-space-sm py-1 bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface">Linen Voile</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Photography by Rich Stapleton</span>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-primary hover:underline" href="#">Explore Suite →</a>
+</div>
+</div>
+</article>
+<!-- PROJECT 03: CASA DE TIERRA -->
+<article class="project-item lg:col-span-5 flex flex-col group bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300" data-category="coastal-retreats private-residences">
+<div class="relative w-full aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]" data-alt="Sun-drenched coastal villa interior in Mallorca, Spain. Earthy terracotta tiled floors, hand-raked warm ochre lime plaster curved walls, built-in masonry seating with sun-bleached cushions, raw timber pergola casting geometric shadows, with a glimpse of Mediterranean olive groves outside." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmx2Uy30CPr4wuqo-Iexr9KO4DZ1bMo4txPNXZi_jhr2oyNDN5MaRaY0C1qj9DmKzTFBsCIzjTMGgzIZEdi7mdQLWLLJ5MxUp8fpbT_Xzy4IJ79ASvfFwP1u46lssB8b8y81eYbrv20zUEwHtPb5wi6I9HxzE0z9m9zwNXbO1rMn03guJ9KNunou2WquTC7-7WFpQtlAaHXmmUQSX-Idky0eCsdws6sm2UG0eUOYc_QhrzeVokilR_"/>
+<span class="absolute top-space-md left-space-md bg-surface/90 backdrop-blur-md px-space-md py-space-xs rounded-full font-label-sm text-label-sm uppercase tracking-widest text-on-surface">
+              Mallorca Coastal
+            </span>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-1 bg-surface-container-lowest">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm tracking-widest uppercase mb-space-xs">
+<span>03 / Mallorca, Spain</span>
+<span>5,600 sq ft</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight group-hover:text-primary transition-colors">
+                Casa de Tierra
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                An earth-toned retreat nestled in the Tramuntana foothills. Formed with local clay bricks, lime-wash pigment, and reclaimed olive wood joinery.
+              </p>
+<!-- Materials spec -->
+<div class="mt-space-md flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-1 bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface">Mallorcan Marés Stone</span>
+<span class="px-space-sm py-1 bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface">Raw Terracotta</span>
+<span class="px-space-sm py-1 bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface">Reclaimed Olive</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Photography by Salva López</span>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-primary hover:underline" href="#">Explore Suite →</a>
+</div>
+</div>
+</article>
+</div>
+<!-- THREE-COLUMN TRIPTYCH SPREAD: LONDON, KYOTO, ASPEN -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- PROJECT 04: THE BELGRAVIA TOWNHOUSE -->
+<article class="project-item flex flex-col group bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300" data-category="private-residences">
+<div class="relative w-full aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]" data-alt="Refined London townhouse dining room interior in Belgravia. Classical ornate Georgian ceiling cornicing restored in matte chalk white, dark stained English oak floorboards, sculptural brushed brass chandelier over a monolithic dark green marble dining table with custom bouclé armchairs." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWZjwCA7Py4dbYhRFvpLjtpb9pPKLnriEC1zcRsw87zBSHZjbtBv8CtZ5NVojnZYO8sVIsCO_mkw5ts7_3yt7QF1vqrKhArdxGD2in_mS_QnUHkOUdj6VyLyMQ98goXWRCtuF3w-49yJqlYSbZay0J4hudkKvy-_KG1zGK23GWULBCjiAYX83ZFB6tNo3w79zskOxXICqXnzOFZPQacJqqPFan37TttgwwjuvO2BexRzsf1EnWn_Ws"/>
+<span class="absolute top-space-md left-space-md bg-surface/90 backdrop-blur-md px-space-md py-space-xs rounded-full font-label-sm text-label-sm uppercase tracking-widest text-on-surface">
+              Heritage Restoration
+            </span>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-1 bg-surface-container-lowest">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm tracking-widest uppercase mb-space-xs">
+<span>04 / London, UK</span>
+<span>2023</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight group-hover:text-primary transition-colors">
+                The Belgravia Townhouse
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                A Grade II-listed Regency structure reimagined with restrained contemporary proportion, dark English oak, and hand-woven silk wallcoverings.
+              </p>
+<div class="mt-space-md flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-0.5 bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface">Verde Alpi Marble</span>
+<span class="px-space-sm py-0.5 bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface">Chalk Plaster</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Photo: Rory Gardiner</span>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-primary hover:underline" href="#">View →</a>
+</div>
+</div>
+</article>
+<!-- PROJECT 05: KYOTO PAVILION -->
+<article class="project-item flex flex-col group bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300" data-category="bespoke-commercial coastal-retreats">
+<div class="relative w-full aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]" data-alt="Minimalist contemporary tea salon and pavilion in Kyoto Japan. Natural Hinoki cedar framing, textured woven rush grass tatami mats, handmade washi paper shoji partitions diffusing calm amber garden light, dark charcoal volcanic stone wash basin with minimal brass water spout." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_-VNpwhXp0ttNZsYuWtvPBr8xkZTTaz3TyZ8ZEIcK9Q1mtXrSTF8GFel-Q7sDHqqRRrxs6q2BsgIJ4bGiwOTm1eI0bpZMX2luIrxmyMnqd34npFT1VYiMhv7G0Vzm4Q74a4uBf4lYjnPjaDp1llp_2FisMPFn9t4JCWSU0f6h5WiGtUtuK1H4hsNlAlW-8_AzAz4KiKZLI6ZpB-h8X8LHSZtvN7b7O5j3Xwq7KPHX9MeB4DeKInLD"/>
+<span class="absolute top-space-md left-space-md bg-surface/90 backdrop-blur-md px-space-md py-space-xs rounded-full font-label-sm text-label-sm uppercase tracking-widest text-on-surface">
+              Tea Pavilion
+            </span>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-1 bg-surface-container-lowest">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm tracking-widest uppercase mb-space-xs">
+<span>05 / Kyoto, Japan</span>
+<span>2024</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight group-hover:text-primary transition-colors">
+                Kyoto Pavilion
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                Wabi-sabi philosophy united with precise European architectural millwork. Featuring aromatic Hinoki cedar, handmade Echizen washi screens, and volcanic basalt.
+              </p>
+<div class="mt-space-md flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-0.5 bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface">Hinoki Cedar</span>
+<span class="px-space-sm py-0.5 bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface">Handmade Washi</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Photo: Yoshihiro Makino</span>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-primary hover:underline" href="#">View →</a>
+</div>
+</div>
+</article>
+<!-- PROJECT 06: ASPEN ALPINE CHALET -->
+<article class="project-item flex flex-col group bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300" data-category="private-residences">
+<div class="relative w-full aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]" data-alt="Atmospheric luxury winter chalet great room in Aspen Colorado. Monumental split-face granite chimney stone wall, wide plank reclaimed Douglas fir timber beams, shearling textured armchairs facing panoramic floor to ceiling views of snow-covered pine forests at dusk, warm fireplace glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBuazPauFMWEOZ4G5_nTPzQOUnhkUfz4nYI8t7yQpsR7_YggHR3nx3PK8vyJwEXRkQiZ1fgj9lvomocPRcSGKwzChmveonboo3-8gxbCIzGFuKKxAziMNWtYGedYDbvNAABsEqSLRWY_RkUif9P3eobKvVpQew2sQfwJlpvHwxf958p7qWjS3P98NIVdxNAopBWPX0SGykzxXLB4LlfoewOP77tBBZIZwcc9jUFufCsEMsBE32ampW"/>
+<span class="absolute top-space-md left-space-md bg-surface/90 backdrop-blur-md px-space-md py-space-xs rounded-full font-label-sm text-label-sm uppercase tracking-widest text-on-surface">
+              Alpine Sanctuary
+            </span>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-1 bg-surface-container-lowest">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm tracking-widest uppercase mb-space-xs">
+<span>06 / Aspen, CO</span>
+<span>2023</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight group-hover:text-primary transition-colors">
+                Aspen Alpine Chalet
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                A rugged sanctuary balancing monumental Colorado granite masonry with soft shearling upholstery, blackened steel reveals, and hand-scraped fir timber.
+              </p>
+<div class="mt-space-md flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-0.5 bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface">Split-Face Granite</span>
+<span class="px-space-sm py-0.5 bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface">Reclaimed Fir</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Photo: Douglas Friedman</span>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-primary hover:underline" href="#">View →</a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Curatorial Material Index Drawer Section (Rich tactile detail component) -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface-container-high/40 mt-space-xl">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary block mb-space-xs">The Atelier Material Library</span>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Tactile Finishes of Note</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Every spatial commission is fundamentally conceived through physical mineral specimen, timber samples, and natural loom textiles.
+        </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="w-full h-24 rounded-lg bg-[#d9cbbe] flex items-end p-space-xs relative overflow-hidden">
+<span class="font-label-sm text-label-sm bg-surface/80 backdrop-blur-sm px-2 py-0.5 rounded text-on-surface">Specimen 08-T</span>
+</div>
+<h4 class="font-headline-sm text-[1.125rem] text-on-surface mt-space-xs">Navona Travertine</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tivoli, Italy · Honed, Unfilled</p>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="w-full h-24 rounded-lg bg-[#534035] flex items-end p-space-xs relative overflow-hidden">
+<span class="font-label-sm text-label-sm bg-surface/80 backdrop-blur-sm px-2 py-0.5 rounded text-on-surface">Specimen 14-W</span>
+</div>
+<h4 class="font-headline-sm text-[1.125rem] text-on-surface mt-space-xs">French Flamed Walnut</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dordogne, France · Matte Waxed</p>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="w-full h-24 rounded-lg bg-[#a67b5b] flex items-end p-space-xs relative overflow-hidden">
+<span class="font-label-sm text-label-sm bg-surface/80 backdrop-blur-sm px-2 py-0.5 rounded text-on-surface">Specimen 22-C</span>
+</div>
+<h4 class="font-headline-sm text-[1.125rem] text-on-surface mt-space-xs">Calcot Earth Terracotta</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Catalonia, Spain · Kiln-fired</p>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="w-full h-24 rounded-lg bg-[#cfc5b6] flex items-end p-space-xs relative overflow-hidden">
+<span class="font-label-sm text-label-sm bg-surface/80 backdrop-blur-sm px-2 py-0.5 rounded text-on-surface">Specimen 03-L</span>
+</div>
+<h4 class="font-headline-sm text-[1.125rem] text-on-surface mt-space-xs">Flemish Slub Linen</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kortrijk, Belgium · Heavy Weave</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Commission Inquire Banner -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl">
+<div class="max-w-7xl mx-auto relative rounded-xl overflow-hidden bg-inverse-surface text-inverse-on-surface p-space-lg md:p-space-xl shadow-xl">
+<!-- Decorative background blur -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-fixed animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">Accepting Commissions for Q3/Q4 2025</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-surface-bright tracking-tight max-w-2xl">
+            Have an architectural vision in mind?
+          </h3>
+<p class="font-body-md text-body-md text-surface-dim max-w-xl">
+            From comprehensive residential masterplans to bespoke interior architecture, our atelier operates globally with rigorous attention to craftsmanship and tactile presence.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-md justify-center items-start lg:items-end">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs bg-primary text-on-primary hover:bg-primary-container px-space-lg py-space-md rounded-lg font-label-lg text-label-lg uppercase tracking-wider transition-all duration-300 shadow-md duration-300 transform hover:scale-105 active:scale-95 hover:-translate-y-1 " data-path="book-a-consultation" href="#">
+<span>Initiate Consultation</span>
+<span class="material-symbols-outlined text-[18px]">east</span>
+</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-surface-dim hover:text-surface-bright transition-colors flex items-center gap-1" href="mailto:curator@atelierterrestudio.com">
+<span>Download Atelier Lookbook (PDF)</span>
+<span class="material-symbols-outlined text-[16px]">download</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Before/After Archival Modal (Villa Seraphina) -->
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center p-space-md bg-inverse-surface/80 backdrop-blur-md" id="modal-seraphina">
+<div class="relative bg-surface rounded-xl max-w-4xl w-full p-space-lg shadow-2xl flex flex-col max-h-[90vh] overflow-y-auto">
+<div class="flex items-center justify-between pb-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Archival Case Study · Before &amp; After</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Villa Seraphina / Grand Salon</h4>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface transition-colors" onclick="toggleModal('modal-seraphina')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mt-space-xs">
+<div class="flex flex-col gap-space-xs">
+<div class="relative aspect-[4/3] rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover grayscale opacity-90" data-alt="Before restoration photo of Lake Como historical villa room with faded peeling wallpaper, dusty worn floral flooring, shuttered dark windows, and dilapidated interior structure prior to architectural renovation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEH-dHNWc6zBe2Zv18wKXHogRYn9zSkE6vQhK6a_bwTNPDLSf6hmliLhcg7hn2TQHLWG-XB2GZgKUNm3WC3Xv64VzKb_t75MaCaGxLRftvYzquzn5qmmX0OapqVzwxliO7c0_Ril6cVc40tyExKKP_MEp706-fCHXf51m4rvbWO4R8jlB4hF5zfVgp6DAQgm1MBNq3s-K667IIQtBUJr1bcsqVplI3bRrf_M21GDdGremMw09Lia9y"/>
+<span class="absolute top-space-xs left-space-xs bg-inverse-surface/90 text-inverse-on-surface px-space-xs py-0.5 rounded font-label-sm text-label-sm uppercase">1982 State</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Original partitioned structure with deteriorated plaster moldings and fragmented tilework.</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="relative aspect-[4/3] rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="After architectural restoration photo of Lake Como villa with restored travertine barrel vault, limestone flooring, bespoke bronze fixtures, and warm sunlight entering through arched doorways overlooking lake." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD99Leci1LM6Mryw-xlbXxfKcTs5kjne1fPMZMXcqLhFdekjl7pbOJrTAClnrt62r7ydEX_shcrHGnbNwlB9jw2zaQvxUqv3GDEVn_WTSqWtuEZe5M2JtN9dY7OYP8EFLuGisgagqBJ_ElpiibhwV_Znt6y41FonSC2T-eOBLyEyuyQzwfzqDZ9QOVx-whqRRzK-8RGRI-V5u5tfkuODpG-ttZaeWGem-7bTIPnyjKdxsNYGPGJlQlr"/>
+<span class="absolute top-space-xs left-space-xs bg-primary text-on-primary px-space-xs py-0.5 rounded font-label-sm text-label-sm uppercase duration-300 transform hover:scale-105 active:scale-95 hover:-translate-y-1 ">Home Decor 2024</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Restored vaulted geometry opening straight toward Lake Como with continuous thermal travertine.</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-low p-space-md rounded-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Architectural Intervention</span>
+<span class="font-body-sm text-body-sm text-on-surface">Structural vault stabilization, underfloor geothermal heating, natural hydraulic lime finish.</span>
+</div>
+<button class="bg-primary text-on-primary px-space-md py-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider duration-300 transform hover:scale-105 active:scale-95 hover:-translate-y-1 " onclick="toggleModal('modal-seraphina')">
+          Close Case Study
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive Quick View Modal (The Tribeca Loft) -->
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center p-space-md bg-inverse-surface/80 backdrop-blur-md" id="modal-tribeca">
+<div class="relative bg-surface rounded-xl max-w-2xl w-full p-space-lg shadow-2xl flex flex-col">
+<div class="flex items-center justify-between pb-space-sm">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">The Tribeca Loft Specs</h4>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface" onclick="toggleModal('modal-tribeca')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="aspect-video w-full rounded-lg overflow-hidden my-space-sm">
+<img class="w-full h-full object-cover" data-alt="Detailed interior perspective of the Tribeca loft master suite showing a monolithic limestone soaking tub framed by floor to ceiling dark walnut slatted screens, warm soft morning sunlight, and textured Belgian waffle linen towels." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3OnWXCIOMhnBHxmGslheotvj--6peSyxrXg6TESzTcocrifm1d6YYXrYz-SJhxLNZ7jHc7NMvLqXH5gzuprkb-uN6FxPjh2DGRO9UaOcpd441pwrT3K0OXFGlSw0jJPRfyowQEmuUAzBniitY8lBZVYB_Ry9werJi_Ji-AvMj1c-DC356mGChu_nxhyn0YDkQ1jp76RGE91Wd9LimJU9mM1vfMMMnsazqLnjD7YjG5GsJTHzoCpJn"/>
+</div>
+<div class="space-y-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<p><strong>Commission Type:</strong> Complete Gut Renovation &amp; Spatial Re-plan</p>
+<p><strong>Lead Architect:</strong> Home Decor Paris &amp; New York Branch</p>
+<p><strong>Acoustic Rating:</strong> Custom double-glazed Crittall assemblies achieving STC 48 rating for quietude in central Tribeca.</p>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Filter & Modal Logic -->
+<script>
+    // Portfolio Category Filter Behavior
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectItems = document.querySelectorAll('.project-item');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Active button styling toggle
+        filterButtons.forEach(btn => {
+          btn.classList.remove('bg-inverse-surface', 'text-inverse-on-surface', 'shadow-sm');
+          btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        button.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        button.classList.add('bg-inverse-surface', 'text-inverse-on-surface', 'shadow-sm');
+
+        const selectedFilter = button.getAttribute('data-filter');
+
+        projectItems.forEach(item => {
+          if (selectedFilter === 'all') {
+            item.style.display = 'flex';
+          } else {
+            const categories = item.getAttribute('data-category') || '';
+            if (categories.includes(selectedFilter)) {
+              item.style.display = 'flex';
+            } else {
+              item.style.display = 'none';
+            }
+          }
+        });
+      });
+    });
+
+    // Modal Display Handler
+    function toggleModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.toggle('hidden');
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low"><div class="w-full px-margin-mobile md:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="transparent home decor logo.png" class="h-16 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W4OBQX7BQriAIfp7w6NLoyza9_5P8eyYXvNqLsXXgL80yedDd_pnwDeDYI_xAd6jnZ6KVBkrDJR6mDyypEww4r86yMF5c269fhkysvAjCo1GASRz2aVBf_T7RwZr43o41kjyj8VrJsXcZ1dxOKMKgSBzmsgcmD64EWwR0k1dHhCLh-hPP1WzF5UQHzt6sCXAtPKPwqUB3OVo2KPgkZ_DbX3BD3tZAmnIrCDJdQAVXzVfFsQKMCt-k3RfIYYb6y7-2QDvZeKE8d"/><span class="font-headline-sm text-headline-sm text-on-surface">Home Decor</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Editorial interior architecture, bespoke residences, and curated spatial monographs honoring warm materiality and architectural quietude.</p><div class="flex items-center gap-space-md pt-space-xs"><a class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">public</span></a><a class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">share</span></a></div></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Studio &amp; Atelier</span><div class="font-body-sm text-body-sm text-on-surface-variant space-y-space-xs"><p>742 Quai de la Tournelle</p><p>75005 Paris, France</p><p class="pt-space-xs">contact@atelierterrestudio.com</p><p>+33 (0)1 44 28 90 10</p></div></div><div class="lg:col-span-5 flex flex-col gap-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Monograph Gazettes</span><p class="font-body-sm text-body-sm text-on-surface-variant">Receive biannual design monographs, architectural previews, and material retrospectives.</p><form class="flex flex-col sm:flex-row gap-space-xs pt-space-xs" onsubmit="event.preventDefault()"><input class="flex-1 bg-surface-container-lowest px-space-md py-space-sm rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Enter your correspondence email" type="email"/><button class="bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider px-space-lg py-space-sm rounded-lg hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 transform hover:scale-105 active:scale-95 hover:-translate-y-1 " type="submit">Join</button></form></div></div><div class="mt-space-xl pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-high/40 px-space-md py-space-sm rounded-xl"><span class="font-label-sm text-label-sm text-on-surface-variant">© 2025 Home Decor Architecture &amp; Interiors. All rights reserved.</span><div class="flex items-center gap-space-lg"><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Terms of Commission</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Press Archives</a></div></div></div></footer></body></html>

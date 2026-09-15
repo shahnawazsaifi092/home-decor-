@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-surface-variant": "#54433e",
+          "surface-dim": "#e7d7d0",
+          "secondary-container": "#ffd0b9",
+          "primary-container": "#af5e45",
+          "surface-bright": "#fff8f6",
+          "on-secondary-container": "#7a5745",
+          "on-error": "#ffffff",
+          "outline-variant": "#dac1ba",
+          "on-primary-fixed": "#3a0a00",
+          "secondary-fixed": "#ffdbca",
+          "on-primary-container": "#fffbff",
+          "outline": "#87736d",
+          "surface-container-lowest": "#ffffff",
+          "primary": "#91462f",
+          "surface-container-low": "#fff1eb",
+          "on-tertiary-fixed": "#2c1600",
+          "tertiary": "#7b542b",
+          "surface": "#fff8f6",
+          "background": "#fff8f6",
+          "on-secondary-fixed": "#2d1507",
+          "on-primary-fixed-variant": "#76321d",
+          "inverse-surface": "#382e2a",
+          "tertiary-container": "#966c41",
+          "inverse-primary": "#ffb59f",
+          "secondary": "#795644",
+          "on-tertiary-container": "#fffbff",
+          "inverse-on-surface": "#feede6",
+          "surface-tint": "#944931",
+          "on-surface": "#221a16",
+          "tertiary-fixed": "#ffdcbd",
+          "surface-variant": "#efdfd8",
+          "secondary-fixed-dim": "#eabda6",
+          "on-secondary-fixed-variant": "#5f3f2e",
+          "primary-fixed": "#ffdbd0",
+          "surface-container-highest": "#efdfd8",
+          "on-tertiary-fixed-variant": "#623f18",
+          "on-error-container": "#93000a",
+          "error": "#ba1a1a",
+          "on-tertiary": "#ffffff",
+          "on-secondary": "#ffffff",
+          "surface-container-high": "#f5e5de",
+          "error-container": "#ffdad6",
+          "primary-fixed-dim": "#ffb59f",
+          "on-background": "#221a16",
+          "on-primary": "#ffffff",
+          "surface-container": "#fbebe4",
+          "tertiary-fixed-dim": "#f0bd8b"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-lg": "1.75rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem",
+          "gutter": "2rem",
+          "space-md": "1rem",
+          "gutter-mobile": "1rem",
+          "margin": "4rem",
+          "margin-mobile": "1.5rem",
+          "space-xl": "3rem"
+        },
+        "fontFamily": {
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "headline-display": [
+            "Playfair Display"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-display-mobile": [
+            "Playfair Display"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-sm": [
+            "1.5rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "0em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-display": [
+            "4.5rem",
+            {
+              "lineHeight": "5rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "0.875rem",
+            {
+              "lineHeight": "1.375rem",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "2rem",
+            {
+              "lineHeight": "2.5rem",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-display-mobile": [
+            "2.75rem",
+            {
+              "lineHeight": "3.25rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "2rem",
+            {
+              "lineHeight": "2.5rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-lg": [
+            "0.875rem",
+            {
+              "lineHeight": "1.125rem",
+              "letterSpacing": "0.08em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "3rem",
+            {
+              "lineHeight": "3.5rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "0.6875rem",
+            {
+              "lineHeight": "0.875rem",
+              "letterSpacing": "0.14em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "1rem",
+            {
+              "lineHeight": "1.625rem",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "1.125rem",
+            {
+              "lineHeight": "1.875rem",
+              "letterSpacing": "0.01em",
+              "fontWeight": "300"
+            }
+          ],
+          "label-md": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "letterSpacing": "0.12em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(35,27,23,0.05)]"><div class="h-20 w-full px-margin-mobile md:px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="transparent home decor logo.png" class="h-16 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W4OBQX7BQriAIfp7w6NLoyza9_5P8eyYXvNqLsXXgL80yedDd_pnwDeDYI_xAd6jnZ6KVBkrDJR6mDyypEww4r86yMF5c269fhkysvAjCo1GASRz2aVBf_T7RwZr43o41kjyj8VrJsXcZ1dxOKMKgSBzmsgcmD64EWwR0k1dHhCLh-hPP1WzF5UQHzt6sCXAtPKPwqUB3OVo2KPgkZ_DbX3BD3tZAmnIrCDJdQAVXzVfFsQKMCt-k3RfIYYb6y7-2QDvZeKE8d"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface hidden sm:inline-block">Home Decor</span></div><nav class="hidden lg:flex items-center gap-space-xl" data-active-classes="text-primary font-semibold"><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="index.html">Home</a><a aria-current="page" class="uppercase tracking-wider transition-colors text-primary font-semibold" data-path="about-us" href="about.html">About Us</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="services" href="services.html">Services</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="portfolio" href="portfolio.html">Portfolio</a></nav><div class="flex items-center gap-space-lg"><a class="hidden sm:inline-flex items-center justify-center bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider px-space-lg py-space-sm rounded-lg hover:bg-primary-container hover:text-on-primary-container transition-all shadow-[0_4px_12px_rgba(145,70,47,0.18)] duration-300 transform hover:scale-105 active:scale-95 hover:-translate-y-1 " data-path="book-a-consultation" href="#">Book a Consultation</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- SECTION 1: EDITORIAL HEADER & PRINCIPAL PORTRAIT (SPLIT SPREAD) -->
+<section class="relative w-full px-margin-mobile md:px-margin pt-space-lg pb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end">
+<!-- Title & Stance -->
+<div class="lg:col-span-7 flex flex-col gap-space-md z-10 pb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-[1px] bg-primary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Volume 01 • Atelier Monograph</span>
+</div>
+<h1 class="font-headline-display text-headline-display tracking-tight text-on-surface">
+          Designing with <span class="italic font-headline-display text-primary">Soul</span> &amp; Intention
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+          Home Decor conceives spaces steeped in quiet permanence—where limestone whispers to aged oak, and architectural proportions sculpt the unhurried ritual of everyday dwelling.
+        </p>
+<div class="flex items-center gap-space-md pt-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[20px]">architecture</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">Paris • Kyoto • Geneve</span>
+</div>
+<span class="text-outline-variant">•</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-outline">Est. 2011</span>
+</div>
+</div>
+<!-- Principal Designer Portrait Composition -->
+<div class="lg:col-span-5 relative mt-space-md lg:mt-0">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden shadow-[0_25px_50px_-12px_rgba(35,27,23,0.12)] bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-[1.02]" data-alt="Editorial portrait of lead female architect and founder in an architectural atelier loft with high vaulted concrete ceilings, floor-to-ceiling iron windows filtering soft golden hour light, wearing an espresso linen tailored jacket beside an untreated travertine plinth with marble chips and rolled parchment sketches. Cinematic soft focus, muted terracotta and warm cream tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAutaNQtE9sgoNOWSEVLLbGCynq_8TOZEUAiZ7chjioYsomVHFMy4n4_45iKPzMY-Ci5g5XTJmBPe1O9Y1Kis3QzKpz5jsabAItASWTCgKXvAl9MQVI_edBBL4sGdfhehPLvYeBqDkpruifsL6QFsHepVMlo9KMleOLSwEU9RW3DU7ciCgxOMYdgc4hY-VUnP0v7NIBcAxq_dLn-eMC6H838tCuIKoEe7TplCg3U8Qlzx9pl4wb_y-s"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex flex-col justify-end p-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">Founder &amp; Artistic Director</span>
+<span class="font-headline-sm text-headline-sm text-surface-bright">Elena de Saint-Germain</span>
+<p class="font-body-sm text-body-sm text-surface-dim font-light">Directing spatial poetics and material provenance across thirty countries.</p>
+</div>
+</div>
+<!-- Overlapping Specimen Badge -->
+<div class="absolute -bottom-6 -left-6 hidden sm:flex flex-col bg-surface-container-high/95 backdrop-blur-md p-space-md rounded-xl shadow-lg max-w-xs">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Core Medium</span>
+<span class="font-headline-sm text-base font-semibold text-on-surface">Honed Roman Travertine &amp; Smoked Cast Bronze</span>
+<div class="flex items-center gap-2 mt-2">
+<span class="w-3 h-3 rounded-full bg-primary-container inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-[#382e2a] inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-[#e7d7d0] inline-block"></span>
+<span class="font-label-sm text-label-sm text-outline ml-auto">Provenance: Tivoli</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: STUDIO STORY & ETHOS (TACTILE EDITORIAL ESSAY) -->
+<section class="w-full bg-surface-container-low px-margin-mobile md:px-margin py-space-xl my-space-lg">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Story text with drop-cap & typography play -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">The Studio Narrative</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface leading-tight">
+            Crafting spaces that endure long after novelty dissolves.
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant font-light first-letter:font-headline-display first-letter:text-5xl first-letter:float-left first-letter:mr-3 first-letter:text-primary">
+            Founded in Paris along the banks of the Seine, Home Decor emerged from a deliberate rejection of synthetic acceleration. We hold the conviction that true luxury is not marked by ornamentation, but by spatial stillness, light choreography, and the authentic touch of raw, unvarnished natural matter.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Each bespoke commission is conceived as a one-of-one monograph. We forage tactile mediums across Europe and the Mediterranean: quarry-carved Roman travertine, hand-planed French white oak aged by ambient cellar moisture, Belgian natural unbleached flax linens, and lost-wax cast bronze elements sculpted in small artisanal foundries.
+          </p>
+<div class="pt-space-sm flex flex-col sm:flex-row gap-space-md">
+<div class="p-space-md bg-surface rounded-lg shadow-sm flex-1">
+<span class="material-symbols-outlined text-primary text-[28px] mb-2">spa</span>
+<h4 class="font-headline-sm text-lg font-medium text-on-surface">Organic Sensibility</h4>
+<p class="font-body-sm text-body-sm text-outline mt-1">Surfaces that patinate gracefully over generations rather than deteriorate.</p>
+</div>
+<div class="p-space-md bg-surface rounded-lg shadow-sm flex-1">
+<span class="material-symbols-outlined text-primary text-[28px] mb-2">draw</span>
+<h4 class="font-headline-sm text-lg font-medium text-on-surface">Precision Drawings</h4>
+<p class="font-body-sm text-body-sm text-outline mt-1">Custom millwork and lighting joinery calculated to hairline millimetric tolerances.</p>
+</div>
+</div>
+</div>
+<!-- Material Monograph Photo Diptych -->
+<div class="lg:col-span-6 grid grid-cols-2 gap-space-md mt-space-lg lg:mt-0">
+<div class="flex flex-col gap-space-md">
+<div class="w-full aspect-[3/4] rounded-xl overflow-hidden shadow-md bg-surface-container-high">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="Close up architectural detail of chisel-textured travertine stone wall bathed in soft directional morning sun, with a subtle brass wall sconce casting warm shadows. Organic minimalism, tactile textures, rich earth tones, luxury interior architectural photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBLGjLBh3J-I4WPwJvP86xalZeKaGy1Myio75OGebVOS-UGAHBqcTRBVlisPc-h7u67SuANYKzu52aPj73QsY9scA2mKAS3np-XNoVtXYSjzm6K2bsaUjrepw1r7nS0Wdd27djH12DM0iUjZQH7BTHRwlY8xzTqW8Et512J5DJ6j-BUpCgo3yDcCnSQivxm4dldp0xXmbE94d9FEkPdANHT8uyTTuvG0HEp4K00T5I_J1yaYpkXjXk"/>
+</div>
+<div class="p-space-md bg-surface-container rounded-lg">
+<span class="font-label-sm text-label-sm text-primary uppercase">Figure 2.1 • Texture</span>
+<p class="font-headline-sm text-base text-on-surface mt-1">Aged European White Oak &amp; Raw Belgian Flax Linen</p>
+</div>
+</div>
+<div class="flex flex-col gap-space-md pt-space-lg">
+<div class="p-space-md bg-surface-container rounded-lg">
+<span class="font-label-sm text-label-sm text-primary uppercase">Figure 2.2 • Tactility</span>
+<p class="font-headline-sm text-base text-on-surface mt-1">Poured Terracotta Plinth with Unlacquered Bronze Seams</p>
+</div>
+<div class="w-full aspect-[3/4] rounded-xl overflow-hidden shadow-md bg-surface-container-high">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="Overhead aesthetic flat lay of natural interior design materials including tumbled travertine tile, unlacquered bronze hardware, swatches of heavy raw linen fabric, deep espresso wood stain sample, and a bespoke fountain pen resting on architectural tracing paper." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARLjASIkEM6M6dMsibLjpYMT_ySRurncSRnnUOmzoFcDWNAkELeOVrvCyZHmUGqwn3w5NQKgUqiWgWhTfTffXxH8nkVWM1BjKcy7TVW9spGjqvwtwlNOIgxKx3P3Wa5Lb5YMQWZY5ge65grXVknERKnZh-Swg8wf6COCSlqG2Fik8-MZrSUyYRrbr9oG01B9FPcnILtgQ9T2SceVRA4SMr5aM_iYeGE0_MeQuQTfz8Gw1PRBF1VkJC"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: DESIGN PHILOSOPHY PILLARS (3 COLUMNS) -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Triptych Manifesto</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">Our Pillars of Praxis</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Three non-negotiable architectural tenets that discipline every sketch, stone selection, and spatial proportion we deliver.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Pillar 1 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="font-headline-sm text-headline-sm text-primary group-hover:translate-x-1 transition-transform">01</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">diamond</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-sm">Material Honesty</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              We never disguise one medium as another. Wood remains unlacquered to breathe; stone retains its prehistoric veining and micro-fissures; metals are unsealed to invite the natural fingerprints of time.
+            </p>
+</div>
+<div class="pt-space-lg mt-space-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Tenet Focus</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">Raw provenance • Non-toxic patinas • Monolithic surfaces</p>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container-high p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="font-headline-sm text-headline-sm text-primary group-hover:translate-x-1 transition-transform">02</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">wb_sunny</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-sm">Architectural Harmony</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              We orchestrate daylight as an active structural entity. Interior apertures frame celestial paths, balancing dramatic monumental heights with cloistered, intimate alcoves designed for quiet solitude.
+            </p>
+</div>
+<div class="pt-space-lg mt-space-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Tenet Focus</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">Volumetric equilibrium • Sightline axes • Circadian cadence</p>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="font-headline-sm text-headline-sm text-primary group-hover:translate-x-1 transition-transform">03</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">precision_manufacturing</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-sm">Bespoke Craft</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              More than eighty percent of all fixtures, furniture plinths, and door pulls inside an Home Decor home are tailor-commissioned directly with our master cabinetmakers, bronze casters, and weavers.
+            </p>
+</div>
+<div class="pt-space-lg mt-space-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Tenet Focus</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">Single-edition commissions • Hand-chiseling • Guild partnerships</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: LEADERSHIP & CREATIVE TEAM (BESPOKE GRID) -->
+<section class="w-full bg-surface-container-lowest px-margin-mobile md:px-margin py-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Curators of Atmosphere</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">Leadership &amp; Masters of Practice</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          A symbiotic guild of licensed architects, restoration historians, acoustic engineers, and textile specialists guiding every spatial transition.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Leader 1 -->
+<div class="group flex flex-col">
+<div class="aspect-[3/4] w-full rounded-xl overflow-hidden bg-surface-container mb-space-md relative shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Artistic monochrome-warm editorial portrait of a mid-40s male senior principal architect in a minimalist turtleneck standing next to an architectural scale model in a sunlit Parisian studio. Warm earthy ambient tones, high end design lookbook style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVlgWRP3lbe8g73jfLOvGrpWuh_8LbGGg-aiT-evw2K4xQnSkeD0mQngiF5JW1mp_0lCyEG7mhtYhGRyuyr88b2vUpuyDsgqsGc84woV_V_1iInzmhsP3BXIHgNrCMaBvAOtnf535-JUbX93Z0JPgN05-lND52m-sPdhROzxYHVIuLCW8OgGkmfy7Mtum76Q5p2opna2qJ0QMlihbKzn1c_jF4lS0vYchs_D-zFnwDdmy0iTlsJb_-"/>
+<div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-space-sm py-1 rounded">
+<span class="font-label-sm text-label-sm text-primary uppercase">Architecture Principal</span>
+</div>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Mathieu de Vigny</h4>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary mt-1">DPLG Architect, Sorbonne</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Twenty years directing structural historical interventions and cliffside cantilevers across the Côte d’Azur and the Engadin valley.
+          </p>
+</div>
+<!-- Leader 2 -->
+<div class="group flex flex-col">
+<div class="aspect-[3/4] w-full rounded-xl overflow-hidden bg-surface-container mb-space-md relative shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Editorial portrait of an Asian-European female interior architect inspecting woven silk and linen textiles against a warm plaster background in a high ceiling atelier. Soft diffused natural light, calm refined expression, upscale architectural magazine aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBODKQRz1MOvFjrg79uQMgfInAbcnavN2lm3sutID-gxA0cR2MBntp_KI0kY14Jg6vIDd94K29laWYmkZy_bNZ_0wfH_fDx6HBTToNqkMS3YpLIGFJjnAjz15_r9fcCiTStx5spSc_-fkNmdBLMI9KVR8wWrooigSm0rFEtqrwh4hA3wcJ2VlcxZJQ8v2BZ6i7NHQdR5ssI9B1-v9ifM2pNGdyebPYjCWIbhGmDZYqtHuroMOWxShrB"/>
+<div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-space-sm py-1 rounded">
+<span class="font-label-sm text-label-sm text-primary uppercase">Director of Interiors</span>
+</div>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Aoi Tanaka-Sorel</h4>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary mt-1">Tokyo &amp; Milan Academy</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Synthesizes Japanese wabi-sabi principles with classical Parisian Haussmann volumes, orchestrating organic textiles and acoustic calm.
+          </p>
+</div>
+<!-- Leader 3 -->
+<div class="group flex flex-col">
+<div class="aspect-[3/4] w-full rounded-xl overflow-hidden bg-surface-container mb-space-md relative shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Portrait of a Scandinavian male master furniture designer and material director in a workshop with chisels and wood planes behind him. Warm lighting, tactile timber environment, refined artisanal portraiture for luxury design house." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfy54zbrWJzsXbjMLdBfaLJ8DH9VYTke9Eu8QvENgiHiFuSJVmUbgzC0OEE77uET5jc3QH1VzC8THQ_DaNIFV2E9OP9dbqTaVWjJvNJiBNi9u0_ouCldO7W-AnQcZD2G9HVEsmxKj_paVlU7oJgopQtW5brBF3rGhAhnXXDxudVNPM5lFS236R1H19CHKj3hZf0yvnRTgvqngGGvjTVHqU1BLPaBX020a0JRSu7M9bpUmvjTQdt3dh"/>
+<div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-space-sm py-1 rounded">
+<span class="font-label-sm text-label-sm text-primary uppercase">Head of Bespoke Furniture</span>
+</div>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Henrik Lindqvist</h4>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary mt-1">Copenhagen Guild Master</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Oversees our custom joinery workshops, hand-selecting aged logs from sustainably managed European forests for bespoke tables and plinths.
+          </p>
+</div>
+<!-- Leader 4 -->
+<div class="group flex flex-col">
+<div class="aspect-[3/4] w-full rounded-xl overflow-hidden bg-surface-container mb-space-md relative shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Editorial portrait of a distinguished southern European woman project director reviewing site elevations and blueprints over a stone desk. Dressed in espresso tailored silk, elegant and authoritative presence, warm terracotta and travertine background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqOaWKYHw77JbpIfUQo7H5uz_vxHwCp0krx-mRGbcAX-rE7w0Z_DeLu4pdHxS_aBj-B6DDoy-Bf-yHAnYi25ryhP5JpVCqqdk_XpgWyvy6g_vUPetPa3JdWcP64o122xhA7aLZeu9vZc_I6GiE2mpdOJlOWigZG0D72Cy7eQHagJ0ekivYRg-mSykjGR_jkLiUzCFwBWPwjN35yYIy4VTkTwPsoyu9T9gRnP9itoDQmjzYHjk3714_"/>
+<div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-space-sm py-1 rounded">
+<span class="font-label-sm text-label-sm text-primary uppercase">Managing Director</span>
+</div>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Clara Moretti</h4>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary mt-1">Geneva &amp; Milan Practice</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Synchronizes complex multi-year private commissions from zoning entitlements through final museum-grade art curation and white-glove installation.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: BY THE NUMBERS & MILESTONES (STATISTICAL CADENCE & PROGRESSION) -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface-container">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="text-center max-w-2xl mx-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Quantitative Precision</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">A Decade &amp; a Half of Singular Spaces</h2>
+</div>
+<!-- High contrast Stat Mosaic with animated values -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Continuity of Practice</span>
+<div class="my-space-md">
+<span class="font-headline-display text-primary text-5xl font-medium tracking-tight" id="stat-years">14</span>
+<span class="font-headline-display text-primary text-3xl font-light">+</span>
+<p class="font-headline-sm text-base text-on-surface mt-2 font-medium">Years of Architectural Practice</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Uninterrupted stewardship of residential and cultural sanctuaries.</p>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Sanctuaries Realized</span>
+<div class="my-space-md">
+<span class="font-headline-display text-primary text-5xl font-medium tracking-tight" id="stat-residences">180</span>
+<span class="font-headline-display text-primary text-3xl font-light">+</span>
+<p class="font-headline-sm text-base text-on-surface mt-2 font-medium">Completed Residences</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Spanning private islands, alpine chalets, and historic city apartments.</p>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Critical Recognition</span>
+<div class="my-space-md">
+<span class="font-headline-display text-primary text-5xl font-medium tracking-tight" id="stat-awards">12</span>
+<span class="font-headline-display text-primary text-3xl font-light"></span>
+<p class="font-headline-sm text-base text-on-surface mt-2 font-medium">International Design Laurels</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Including the Prix Versailles and Architectural Digest AD100 honors.</p>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Territorial Scope</span>
+<div class="my-space-md">
+<span class="font-headline-display text-primary text-5xl font-medium tracking-tight" id="stat-countries">26</span>
+<span class="font-headline-display text-primary text-3xl font-light"></span>
+<p class="font-headline-sm text-base text-on-surface mt-2 font-medium">Global Project Territories</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Active commissions across Europe, East Asia, the Americas, and the Levant.</p>
+</div>
+</div>
+<!-- Rich Visual: Inline SVG Project Distribution Radar / Radial Diagram -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5 flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Spatial Typography Breakdown</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Curated Commission Portfolios</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Our commissions remain strictly selective, accepting no more than eight large-scale residential monographs concurrently to safeguard absolute artistic intimacy.
+          </p>
+<div class="space-y-space-xs mt-space-sm font-label-md text-label-md">
+<div class="flex items-center justify-between text-on-surface">
+<span class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-primary"></span>Historic Heritage Palazzos</span>
+<span class="font-mono text-outline">42%</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<span class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>Minimalist Coastal Villas</span>
+<span class="font-mono text-outline">35%</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<span class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>Alpine Sanctuaries &amp; Retreats</span>
+<span class="font-mono text-outline">23%</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 flex justify-center py-space-sm">
+<!-- Monochromatic Architectural Distribution Vector Chart -->
+<svg class="w-full max-w-lg h-auto text-on-surface" fill="none" viewbox="0 0 460 200" xmlns="http://www.w3.org/2000/svg">
+<!-- Background structural gridlines -->
+<line stroke="currentColor" stroke-opacity="0.12" stroke-width="1" x1="20" x2="440" y1="160" y2="160"></line>
+<line stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.08" x1="20" x2="440" y1="110" y2="110"></line>
+<line stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.08" x1="20" x2="440" y1="60" y2="60"></line>
+<!-- Milestone Year Columns -->
+<!-- 2012 -->
+<rect class="fill-surface-dim" height="30" rx="2" width="34" x="50" y="130"></rect>
+<text fill="currentColor" font-family="Plus Jakarta Sans" font-size="11" opacity="0.6" text-anchor="middle" x="67" y="180">2012</text>
+<text fill="currentColor" font-family="Playfair Display" font-size="12" text-anchor="middle" x="67" y="122">8</text>
+<!-- 2016 -->
+<rect class="fill-surface-dim" height="65" rx="2" width="34" x="150" y="95"></rect>
+<text fill="currentColor" font-family="Plus Jakarta Sans" font-size="11" opacity="0.6" text-anchor="middle" x="167" y="180">2016</text>
+<text fill="currentColor" font-family="Playfair Display" font-size="12" text-anchor="middle" x="167" y="87">38</text>
+<!-- 2020 -->
+<rect class="fill-secondary-container" height="95" rx="2" width="34" x="250" y="65"></rect>
+<text fill="currentColor" font-family="Plus Jakarta Sans" font-size="11" opacity="0.6" text-anchor="middle" x="267" y="180">2020</text>
+<text fill="currentColor" font-family="Playfair Display" font-size="12" text-anchor="middle" x="267" y="57">104</text>
+<!-- 2025 Present -->
+<rect class="fill-primary" height="135" rx="2" width="34" x="350" y="25"></rect>
+<text fill="#91462f" font-family="Plus Jakarta Sans" font-size="11" font-weight="600" text-anchor="middle" x="367" y="180">Present</text>
+<text fill="#91462f" font-family="Playfair Display" font-size="13" font-weight="600" text-anchor="middle" x="367" y="18">180+</text>
+<!-- Trajectory Trend Curve -->
+<path d="M67 130 C 120 115, 200 80, 267 65 C 310 55, 330 35, 367 25" fill="none" stroke="#91462f" stroke-linecap="round" stroke-width="2"></path>
+<circle cx="367" cy="25" fill="#91462f" r="4"></circle>
+</svg>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: STUDIO CULTURE & BEHIND-THE-SCENES ATELIER -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Behind the Architectural Curtain</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">Life Within the Quai Workshop</h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase text-outline">Open Atelier Hours: By Private Appointment</span>
+</div>
+</div>
+<!-- Bento-style Mosaic of Atelier Life -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Main Large Workshop photo -->
+<div class="md:col-span-8 relative aspect-[16/10] rounded-xl overflow-hidden shadow-md group bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Sun-drenched architectural design workshop with massive dark oak drafting tables covered with parchment architectural blueprints, scale plaster models, stone samples, and brass rulers. Light pouring through 18-foot arched windows illuminating airborne dust motes, elegant quiet luxury atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK4j8ZNlDt0T9v8ECCTY42xSylYch7VJLsZtP8DOf464w24LRcCUe4by9x4elYJoCTKw7nQdmbCyuqmAuIVeOH476lNOMlo1GUTJVznMZISA3rWtXAG32Y1C2P5RdH3aEzsmO9jkIZPPXC4G_zj0newrwTOrnNZUIcxVUo5xaukXGNs7J-qHh7bM-ckKDbBWvNjXmC1G-0WBIQBgqU9AuYBWJzDgMK_eGLtUBwlkhhj20nSC0D9Blw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/70 via-transparent to-transparent flex flex-col justify-end p-space-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">The Central Drafting Room</span>
+<h4 class="font-headline-sm text-headline-sm text-surface-bright">Where every spatial sequence begins on graphite paper</h4>
+<p class="font-body-sm text-body-sm text-surface-dim max-w-md mt-1">We refuse CAD-only schematics in early phases, insisting that our architects physically touch graphite to comprehend scale and mass.</p>
+</div>
+</div>
+<!-- Material Samples Library -->
+<div class="md:col-span-4 flex flex-col gap-space-md">
+<div class="relative aspect-square rounded-xl overflow-hidden shadow-md group bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Cabinet of curiosities in a luxury design atelier: shelving filled with stone cores, timber blocks, raw ceramic vessels, bronze cast ingots, and antique Japanese textile swatches under warm downlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu8ocFjfy_J3PKpzbX8g2eqNCul2GRsBUd_wgPlKWVnIfkYVr3vQXgejWS8GH9G-qugjCRPivQtz8LuGPpAjSJI_DDuchgg9DKuPwM5YYvWAGVUVwsJqBcQTIDbj_dgf6G58VWCNiffX2HvgC5rErKP3FPOyPPLJf7gtZQVgMGhXCr0wD_vimCriteu3GjyoC4UDt_F8fvKhxR75P3Vdr2j-Adzak7eDRnOgJJJYt_FlIC_TX9j7Y4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/75 via-transparent to-transparent flex flex-col justify-end p-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">Archive of Provenance</span>
+<p class="font-headline-sm text-base text-surface-bright">4,000+ cataloged minerals, timber cuts, and loom weaves</p>
+</div>
+</div>
+</div>
+<!-- Hand-sketched Blueprints Detail -->
+<div class="md:col-span-4 relative aspect-[4/3] rounded-xl overflow-hidden shadow-md group bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Macro detail shot of hand-drawn architectural floor plan sketch with fountain pen ink lines, pencil hatching, and coffee cup ring on vellum paper, beside brass drafting compass." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIMChx6Y3TOdyMzXNSVYurQGry7cxvIVRqsBoxA_n74tZPfqIN653nefi4DXbAeP0pFe_DHMEyBRSRFAQEBUnfUXQ6waY7MxN06QCSBSuEA5GbbvOj1gx2mp2c0NZ-3nRsLgs6FKBl4SX1pJQ6_zmnJyOorrXQsOXhLTrkR3lok4_g_sYThJmSQdAOfkHR7bPX1ZvdP20lpmx-Zpojk4F2zY2KAdRt0lkl0VMDJqdosdzjp0NsYhg_"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/70 via-transparent to-transparent flex flex-col justify-end p-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">Hand Drafting Ritual</span>
+<p class="font-headline-sm text-base text-surface-bright">The tactile cadence of the hand-drawn blueprint</p>
+</div>
+</div>
+<!-- Artisanal Joinery & Stone Cutting Detail -->
+<div class="md:col-span-4 relative aspect-[4/3] rounded-xl overflow-hidden shadow-md group bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Craftsman hands gently hand-chiseling a solid block of warm unpolished limestone inside an open light-filled masonry workshop with stone dust on wood benches." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRQSe6heAYgo2XP08-lcZPeZpmC9_kvL4QDh6MHtK-DcSS7iZhcVJl2OD96aGTG6dbNr5TOPTgWFTbmPoYoXJBrXWXwXscJu_biU6YUC0WaKM6AvQRSsdBruFSy_-q5yOzfnmCPKZ1ULTCwdD-h2dfRTl6GReQDRsxjkWXbgmvQSsndc8CseQt68sGqMeFn8eRkrr5PraUoA3G5FjzqgGaId1tm4DINjrLdznZ-2iUBPnk0H2_AP_X"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/70 via-transparent to-transparent flex flex-col justify-end p-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">Direct Artisan Dialogue</span>
+<p class="font-headline-sm text-base text-surface-bright">Collaborating shoulder-to-shoulder with master stonemasons</p>
+</div>
+</div>
+<!-- Daily Studio Gathering Card -->
+<div class="md:col-span-4 bg-surface-container-high p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary text-[32px] mb-space-sm">coffee</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary block">Atelier Routine</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">The Morning Material Critique</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Every day begins around our central monolithic limestone island: an unhurried 9:00 AM critique evaluating how changing natural morning sunlight strikes current project finish mockups.
+            </p>
+</div>
+<div class="pt-space-md flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-medium">Paris Studio Active</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: BESPOKE CLIENT INVITATION / COMMISSION STATEMENT -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl mb-space-lg">
+<div class="max-w-7xl mx-auto bg-surface-container-high rounded-xl p-space-lg md:p-space-xl relative overflow-hidden shadow-md">
+<!-- Ambient decorative gradient circle -->
+<div class="absolute -right-24 -bottom-24 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center relative z-10">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Private Commissions</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">
+            Initiate an Architectural Dialogue with Home Decor.
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            We welcome private clients, family offices, and architectural conservators seeking to conceptualize residences of lasting significance.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-sm justify-end">
+<a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider px-space-lg py-space-md rounded-lg hover:bg-primary-container transition-all shadow-md text-center duration-300 transform hover:scale-105 active:scale-95 hover:-translate-y-1 " data-path="book-a-consultation" href="#">
+            Request Private Consultation
+          </a>
+<a class="inline-flex items-center justify-center bg-transparent text-on-surface hover:bg-surface-container-lowest font-label-lg text-label-lg uppercase tracking-wider px-space-lg py-space-md rounded-lg transition-all text-center" data-path="portfolio" href="portfolio.html">
+            Inspect Built Works
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Client-side subtle milestone counter micro-interaction -->
+<script>
+    (function() {
+      const counters = [
+        { id: 'stat-years', target: 14 },
+        { id: 'stat-residences', target: 180 },
+        { id: 'stat-awards', target: 12 },
+        { id: 'stat-countries', target: 26 }
+      ];
+
+      let animated = false;
+      function runCounters() {
+        if (animated) return;
+        const elem = document.getElementById('stat-years');
+        if (!elem) return;
+        const rect = elem.getBoundingClientRect();
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+          animated = true;
+          counters.forEach(item => {
+            const el = document.getElementById(item.id);
+            if (!el) return;
+            let current = 0;
+            const duration = 1200;
+            const stepTime = Math.abs(Math.floor(duration / item.target));
+            const timer = setInterval(() => {
+              current += 1;
+              el.innerText = current;
+              if (current >= item.target) {
+                el.innerText = item.target;
+                clearInterval(timer);
+              }
+            }, Math.max(stepTime, 15));
+          });
+        }
+      }
+
+      window.addEventListener('scroll', runCounters);
+      window.addEventListener('DOMContentLoaded', runCounters);
+      setTimeout(runCounters, 300);
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low"><div class="w-full px-margin-mobile md:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="transparent home decor logo.png" class="h-16 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W4OBQX7BQriAIfp7w6NLoyza9_5P8eyYXvNqLsXXgL80yedDd_pnwDeDYI_xAd6jnZ6KVBkrDJR6mDyypEww4r86yMF5c269fhkysvAjCo1GASRz2aVBf_T7RwZr43o41kjyj8VrJsXcZ1dxOKMKgSBzmsgcmD64EWwR0k1dHhCLh-hPP1WzF5UQHzt6sCXAtPKPwqUB3OVo2KPgkZ_DbX3BD3tZAmnIrCDJdQAVXzVfFsQKMCt-k3RfIYYb6y7-2QDvZeKE8d"/><span class="font-headline-sm text-headline-sm text-on-surface">Home Decor</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Editorial interior architecture, bespoke residences, and curated spatial monographs honoring warm materiality and architectural quietude.</p><div class="flex items-center gap-space-md pt-space-xs"><a class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">public</span></a><a class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">share</span></a></div></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Studio &amp; Atelier</span><div class="font-body-sm text-body-sm text-on-surface-variant space-y-space-xs"><p>742 Quai de la Tournelle</p><p>75005 Paris, France</p><p class="pt-space-xs">contact@atelierterrestudio.com</p><p>+33 (0)1 44 28 90 10</p></div></div><div class="lg:col-span-5 flex flex-col gap-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Monograph Gazettes</span><p class="font-body-sm text-body-sm text-on-surface-variant">Receive biannual design monographs, architectural previews, and material retrospectives.</p><form class="flex flex-col sm:flex-row gap-space-xs pt-space-xs" onsubmit="event.preventDefault()"><input class="flex-1 bg-surface-container-lowest px-space-md py-space-sm rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Enter your correspondence email" type="email"/><button class="bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider px-space-lg py-space-sm rounded-lg hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 transform hover:scale-105 active:scale-95 hover:-translate-y-1 " type="submit">Join</button></form></div></div><div class="mt-space-xl pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-high/40 px-space-md py-space-sm rounded-xl"><span class="font-label-sm text-label-sm text-on-surface-variant">© 2025 Home Decor Architecture &amp; Interiors. All rights reserved.</span><div class="flex items-center gap-space-lg"><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Terms of Commission</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Press Archives</a></div></div></div></footer></body></html>
